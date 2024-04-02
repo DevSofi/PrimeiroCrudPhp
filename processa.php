@@ -28,7 +28,7 @@
                 }
                 else
                 {
-                    mensagem("$nome NÃO foi cadastrado", 'danger');
+                    mensagem("$nome, você não foi cadastrado!", 'danger');
                 }
             ?>
             <a href="cadastrocrud.php" class="btn btn-primary">Voltar</a>
