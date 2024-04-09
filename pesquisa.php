@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet"  href="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.rtl.css" >
     <title>pesquisa</title>
 </head>
@@ -20,15 +21,22 @@
         <div class="row">
             <div class="col">
                 <div class="container d-flex justify-content-start">
-                    <h1>Pesquisa</h1>
-                    <div class="Pesquisar" >
+                    <h1 class="text-center">Pesquisa</h1>
+                    <div class="container-fluid">
+                    <form class="d-flex"  action="pesquisa.php" method="post" >
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="busca" autofocus>
+                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    </form>
+                    </div>
+            </div>
+                    <div class="pesquisar" >
                         <nav class="navbar bg-body-tertiary">
-                            <div class="container-fluid">
-                                <form class="d-flex"  action="pesquisa.php" method="post" >
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="busca" autofocus>
-                                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-                                </form>
-                            </div>
+<!--                            <div class="container-fluid">-->
+<!--                                <form class="d-flex"  action="pesquisa.php" method="post" >-->
+<!--                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="busca" autofocus>-->
+<!--                                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>-->
+<!--                                </form>-->
+<!--                            </div>-->
                         </nav>
                         <table class="table table-hover">
                             <thead>
@@ -73,7 +81,6 @@
                         </table>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
     <div class="modal fade" id="confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -81,7 +88,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmação de exclusão</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="botaoExcluir">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                    </div>
                 </div>
                 <div class="modal-body">
                     <form action="excluir.php" method="post">

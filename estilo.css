@@ -1,7 +1,39 @@
-a{
-    margin: 5px;
+.pesquisar {
+
+    align-items: center;
+}
+h1 {
+
+
+    font-family:Times New Roman, sans-serif;
+    font-weight: bold;
+}
+.d-flex{
+    width: 600px;
+    padding: 10px;
+}
+.cadastro {
+    margin-top: 80px;
 }
 
-div.Pesquisar{
- float: left;
+h3 {
+    text-align: center;
 }
+ .index {
+     margin-top: 80px;
+ }
+.display-4{
+    text-align: center;
+}
+.acesso {
+    margin-top: 10px;
+}
+.display-5 {
+    margin-top: 20px;
+}
+.botaoExcluir{
+    margin-left: 10px;
+}
+
+
+

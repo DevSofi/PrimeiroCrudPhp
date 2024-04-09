@@ -1,10 +1,9 @@
 <?php
 $servidor = "localhost";
 $usuario = "root";
-$senha = "";
+$senha_banco = "";
 $dbname = "cadastrocrud";
-
-$con = mysqli_connect($servidor, $usuario, $senha, $dbname);
+$con = mysqli_connect($servidor, $usuario, $senha_banco, $dbname);
 
 if (!$con)
 {

@@ -1,8 +1,10 @@
+<?php global $con; ?>
 <!doctype html>
 <html lang="br">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet"  href="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.rtl.css">
     <title>Empresa</title>
 </head>
@@ -11,11 +13,11 @@
     <div class="row">
         <div class="col-3"></div>
             <div class="col-6">
-                <div class="jumbotron">
+                <div class="index">
                     <h1 class="display-4">Login</h1>
                     <form action="/PagInicial.php" method="POST">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Login</label>
+                            <label for="login">Login</label>
                             <input type="text" class="form-control" name="login">
                             <small  class="form-text text-muted">Entre com seus dados de acesso</small>
                         </div>
@@ -23,26 +25,9 @@
                             <label for="exampleInputPassword1">Senha</label>
                             <input type="password" class="form-control" name="senha">
                         </div>
-                        <button type="submit" class="btn btn-primary">Acessar</button>
+                       <div class="acesso" > <button  type="submit" class="btn btn-primary"
+                           >Acessar</button> </div>
                     </form>
-                    <?php
-                        if (isset($_POST['email'], $_POST['senha']))
-                        {
-                            $email = $_POST['email'];
-                            $senha =$_POST['senha'];
-
-                            if (($email === 'admin') && ($senha === 'admin'))
-                            {
-                                session_start();
-                                $_SESSION['login'] = "sofia";
-                            }
-                            else
-                            {
-                                echo"Login invalido";
-                                session_destroy();
-                            }
-                        }
-                    ?>
                 </div>
             </div>
         <div class="col-3"></div>

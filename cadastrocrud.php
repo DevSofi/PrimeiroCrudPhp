@@ -1,15 +1,18 @@
 <?php
-    include_once "conexao.php";
+include_once "conexao.php";
+global $con;
+
 ?>
 <!doctype html>
 <html lang="br">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.rtl.css" >
     <title>cadastro</title>
 </head>
-<body>
+<body class="cadastro">
     <div class="container">
         <div class="row">
             <div class="col">
